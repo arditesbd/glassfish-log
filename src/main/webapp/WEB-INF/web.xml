@@ -6,6 +6,31 @@
       <param-name>productionMode</param-name>
       <param-value>true</param-value>
   </context-param>  
+	<context-param>
+	    <param-name>auth0.domain</param-name>
+	    <param-value>zularbine.auth0.com</param-value>
+	</context-param>
+	
+	<context-param>
+	    <param-name>auth0.issuer</param-name>
+	    <param-value>https://zularbine.auth0.com/</param-value>
+	</context-param>
+	
+	<context-param>
+	    <param-name>auth0.client_id</param-name>
+	    <param-value>K1trjSsn1lTXRFC5SlVui6ykA0xECNTn</param-value>
+	</context-param>
+	
+	<context-param>
+	    <param-name>auth0.signing_algorithm</param-name>
+	    <param-value>HS256</param-value>
+	    <!--<param-value>RS256</param-value>-->
+	</context-param>
+	
+	<context-param>
+	    <param-name>auth0.client_secret</param-name>
+	    <param-value>asCa1AX-Yi3NViqDpKtsWgw7Z14B1-q-ABECMbYIgV2F9rFgmkjXva37LnJjD_1U</param-value>
+	</context-param>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
