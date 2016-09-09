@@ -17,6 +17,7 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.ComboBox;
 import com.vaadin.ui.HorizontalSplitPanel;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.ListSelect;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
@@ -39,7 +40,8 @@ public class MyUI extends UI {
 
 	FilesystemContainer logs = new FilesystemContainer(new File("C:\\Users\\Zularbine\\workspace_neon\\glassfishlog\\logs"));
 	//FilesystemContainer logs = new FilesystemContainer(new File("../logs"));
-	ComboBox logList = new ComboBox("Logs", logs);
+	//ComboBox logList = new ComboBox("Logs", logs);
+	ListSelect logList = new ListSelect("Logs", logs);
 	Label logView = new Label("", ContentMode.PREFORMATTED);
 	
 	@Override
