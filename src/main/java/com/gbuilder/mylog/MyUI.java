@@ -10,6 +10,7 @@ import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.data.util.FilesystemContainer;
 import com.vaadin.data.util.TextFileProperty;
+import com.vaadin.server.Sizeable;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.shared.ui.label.ContentMode;
@@ -51,7 +52,7 @@ public class MyUI extends UI {
 		setContent(split);
 		split.addComponent(logList);
 		split.addComponent(logView);
-		
+		split.setSplitPosition(25, Sizeable.UNITS_PERCENTAGE);
 		logList.addValueChangeListener(new ValueChangeListener() {
 
 			public void valueChange(ValueChangeEvent event) {
